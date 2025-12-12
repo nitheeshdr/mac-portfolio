@@ -1,3 +1,42 @@
-# Auto detect text files and perform LF normalization
-* text=auto
-node_modules
+# Auto-detect text files and enforce LF
+* text=auto eol=lf
+
+# Treat these as text
+*.js     text
+*.jsx    text
+*.ts     text
+*.tsx    text
+*.css    text
+*.scss   text
+*.html   text
+*.json   text
+*.md     text
+*.yml    text
+*.yaml   text
+*.env    text
+
+# Vite config files as text
+vite.config.* text
+*.config.*    text
+
+# Treat images & media as binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.svg   binary
+*.webp  binary
+*.ico   binary
+*.mp4   binary
+*.mp3   binary
+*.ttf   binary
+*.woff  binary
+*.woff2 binary
+
+# Ignore build files (they are binary)
+dist/* binary
+
+# Prevent merge conflict markers in lockfiles
+package-lock.json merge=union
+pnpm-lock.yaml merge=union
+yarn.lock merge=union
