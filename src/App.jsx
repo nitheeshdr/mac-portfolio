@@ -1,8 +1,9 @@
+import Navbar from '#components/Navbar'
 import React from 'react'
 
 const App = () => {
   return (
-    <div className='underline text-sky-800 '>App</div>
+    <Navbar/>
   )
 }
 

@@ -1,9 +1,13 @@
 import React from 'react'
 
 const Navbar = () => {
-  return (
-    <div>Navbar</div>
-  )
+  return 
+    <nav>
+      <div>
+        <img src="" alt="" />
+      </div>
+    </nav>
+  
 }
 
 export default Navbar
